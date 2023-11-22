@@ -1,4 +1,4 @@
-package com.svetinjacodelab.backend.project.model
+package com.svetinjacodelab.backend.project.message
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
