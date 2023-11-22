@@ -1,10 +1,6 @@
-package com.svetinjacodelab.backend.project.service
+package com.svetinjacodelab.backend.project.message
 
-import com.svetinjacodelab.backend.project.model.Message
-import com.svetinjacodelab.backend.project.repository.MessageRepository
-import org.springframework.jdbc.core.query
 import org.springframework.stereotype.Service
-import java.util.*
 import kotlin.jvm.optionals.toList
 
 @Service

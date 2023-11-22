@@ -1,6 +1,5 @@
-package com.svetinjacodelab.backend.project.repository
+package com.svetinjacodelab.backend.project.message
 
-import com.svetinjacodelab.backend.project.model.Message
 import org.springframework.data.repository.CrudRepository
 
 interface MessageRepository: CrudRepository<Message, String> {
