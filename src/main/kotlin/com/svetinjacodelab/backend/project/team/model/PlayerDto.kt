@@ -1,6 +1,6 @@
 package com.svetinjacodelab.backend.project.team.model
 
-data class TeamDto(
+data class PlayerDto(
     val playerId: Long? = null,
     val firstName: String? = null,
     val lastName: String? = null,
@@ -16,8 +16,8 @@ data class TeamDto(
     val playerDescription: String? = null
 )
 
-fun TeamEntity.toDto() = TeamDto(
-    playerId = this.playerId,
+fun PlayerEntity.toDto() = PlayerDto(
+    playerId = this.player_Id,
     firstName = this.firstName,
     lastName = this.lastName,
     dateOfBirth = this.dateOfBirth,
