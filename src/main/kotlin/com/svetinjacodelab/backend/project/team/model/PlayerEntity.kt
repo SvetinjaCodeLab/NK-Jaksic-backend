@@ -3,11 +3,11 @@ package com.svetinjacodelab.backend.project.team.model
 import jakarta.persistence.*
 
 @Entity(name = "player")
-class TeamEntity(
+class PlayerEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "player_id")
-    var playerId: Long? = null,
+    var player_Id: Long? = null,
     @Column(name = "first_name")
     var firstName: String? = null,
     @Column(name = "last_name")
@@ -30,12 +30,12 @@ class TeamEntity(
     var redCards: Int? = null,
     @Column(name = "photo_url")
     var photoUrl: String? = null,
-    @Column(name = "played_description")
+    @Column(name = "player_description")
     var playerDescription: String? = null
 )
 
-fun TeamDto.toEntity() = TeamEntity(
-    playerId = this.playerId,
+fun PlayerDto.toEntity() = PlayerEntity(
+    player_Id = this.playerId,
     firstName = this.firstName,
     lastName = this.lastName,
     dateOfBirth = this.dateOfBirth,

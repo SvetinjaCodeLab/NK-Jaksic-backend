@@ -19,9 +19,7 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-data-jdbc:3.0.4")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.0.4")
-	implementation("org.springframework.boot:spring-boot-starter-jdbc:3.0.4")
 	implementation("org.springframework.boot:spring-boot-starter-web:3.1.0")
 	implementation("org.springframework.boot:spring-boot-starter:3.1.0")
 	implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.10")
