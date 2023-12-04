@@ -17,7 +17,7 @@ data class PlayerDto(
 )
 
 fun PlayerEntity.toDto() = PlayerDto(
-    playerId = this.player_Id,
+    playerId = this.playerId,
     firstName = this.firstName,
     lastName = this.lastName,
     dateOfBirth = this.dateOfBirth,

@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class TeamController(val teamService: TeamService) {
 
-    @GetMapping("/")
+    @GetMapping("/players")
     fun getAllPlayers() = teamService.getAllPlayers()
 }
