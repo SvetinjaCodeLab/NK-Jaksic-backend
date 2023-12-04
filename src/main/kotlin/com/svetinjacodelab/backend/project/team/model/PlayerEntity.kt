@@ -7,7 +7,7 @@ class PlayerEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "player_id")
-    var player_Id: Long? = null,
+    var playerId: Long? = null,
     @Column(name = "first_name")
     var firstName: String? = null,
     @Column(name = "last_name")
@@ -35,7 +35,7 @@ class PlayerEntity(
 )
 
 fun PlayerDto.toEntity() = PlayerEntity(
-    player_Id = this.playerId,
+    playerId = this.playerId,
     firstName = this.firstName,
     lastName = this.lastName,
     dateOfBirth = this.dateOfBirth,
